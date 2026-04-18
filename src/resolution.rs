@@ -10,7 +10,7 @@ pub enum Resolution {
 }
 
 impl Resolution {
-    pub fn max_measurement_time_millis(&self) -> u32 {
+    pub const fn max_measurement_time_millis(&self) -> u32 {
         match self {
             Resolution::Bits9 => 94,
             Resolution::Bits10 => 188,
