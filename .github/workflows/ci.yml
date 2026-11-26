@@ -33,7 +33,7 @@ jobs:
     name: Rust CI
     runs-on: ubuntu-24.04
     timeout-minutes: 2
-    if: ${{ always() }}
+    if: ${{ !cancelled() }}
     needs: validate
     steps:
       - env:
